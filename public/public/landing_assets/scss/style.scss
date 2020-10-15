@@ -1,0 +1,44 @@
+/*
+
+*/
+
+/*Font Families*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,600,600i,800,800i|Roboto+Slab:100,300,400,700');
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: url('../fonts/SolaimanLipiNormal.eot');
+  src: local('../fonts/SolaimanLipi'), local('../fonts/SolaimanLipi'),
+  url('../fonts/SolaimanLipiNormal.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SolaimanLipiNormal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//SASS Variables
+@import "inc/variable";
+@import "inc/mixins";
+
+/*General (Comment style)*/
+@import "inc/generals";
+
+/*Layout*/
+@import "inc/layout";
+
+/*Layout*/
+@import "inc/block";
+
+/*Site Header5*/
+@import "inc/header";
+
+@import "inc/video";
+
+@import "inc/services";
+
+@import "inc/profile";
+
+@import "inc/img_gallery";
+
+@import "inc/footer";
+

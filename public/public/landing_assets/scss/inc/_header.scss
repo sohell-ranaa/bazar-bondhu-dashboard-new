@@ -1,0 +1,200 @@
+.navbar-brand {
+  font-size: 2rem;
+  &,
+  &:hover {
+    color: $secondary-color;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: .4rem 1.2rem;
+}
+
+.navbar-toggler {
+  padding: 0;
+  font-size: 2.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #fff;
+  margin-top: 2px;
+  opacity: .8;
+  &:focus {
+    outline: none;
+  }
+  .plx__icon-open {
+    display: none;
+  }
+  &.collapsed {
+    .plx__icon-open {
+      display: block;
+    }
+    .plx__icon-close {
+      display: none;
+    }
+  }
+}
+
+.main-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: transparent;
+  .navbar {
+    padding: 1rem 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(#ffffff, .1);
+  }
+  .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.15rem;
+    &:hover {
+      color: $primary-lighter-color;
+    }
+    &.nav-btn {
+      //border: 1px solid $secondary-color;
+      color: $secondary-color !important;
+      background-color: transparent;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      //font-size: 1rem;
+      &:hover {
+        background-color: $secondary-color !important;
+        color: #ffffff !important;
+      }
+    }
+  }
+  .dropdown-item {
+    padding: .45rem 1.5rem;
+    border-bottom: 1px solid rgba($default-dark-color, .1);
+    &:last-child {
+      border-bottom: 0 none;
+    }
+  }
+}
+
+#headerPoster {
+  width: 100%;
+  height: 500px;
+  @media screen and (max-width: 991px) {
+    height: 490px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-item {
+    margin: 0 0 10px !important;
+  }
+}
+
+.header {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(#000, .75);
+    z-index: 0;
+  }
+  .header-content {
+    position: absolute;
+    top: 156px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    color: #ffffff;
+    .title-lg {
+      color: #ffffff;
+      @media screen and (max-width: 991px) {
+        font-size: 1.7rem !important;
+      }
+    }
+  }
+  &.home-page {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(#000, .65);
+      z-index: 0;
+    }
+    .main-navbar {
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      .navbar-nav .nav-link {
+        color: #ffffff;
+        &:hover {
+          color: $primary-lighter-color;
+        }
+      }
+      .navbar {
+        border-bottom: none;
+      }
+    }
+  }
+  .page-header {
+    position: relative;
+    z-index: 90;
+    text-align: center;
+    padding: 120px 0 40px;
+    .page-title {
+      font-size: 1.6rem;
+      margin-bottom: 0;
+      color: #ffffff;
+    }
+    .sub-title {
+      color: #ffffff;
+      opacity: .8;
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 991px) {
+      padding: 100px 0 20px;
+      .page-title {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    background-color: $default-dark-color;
+    padding: 15px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: .6rem 1.2rem;
+  }
+  .navbar-expand-lg .navbar-nav:last-child .nav-item:last-child .nav-link {
+    border-bottom: 0 none;
+  }
+  .navbar-nav .dropdown-menu {
+    margin-top: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: rgba(#000, .1);
+  }
+  .main-navbar .dropdown-item {
+    color: #ffffff;
+    border-bottom-color: rgba(#fff, .08);
+  }
+
+  .btn-group-lg > .btn, .btn-lg {
+    padding: .3rem 1.2rem;
+    margin-bottom: 10px;
+  }
+}

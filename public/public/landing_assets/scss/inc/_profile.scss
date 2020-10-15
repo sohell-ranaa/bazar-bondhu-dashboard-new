@@ -1,0 +1,56 @@
+.monthly-featured {
+  background-color: $default-lighter-color;
+}
+.profile-card {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  height: calc(100% - 30px);
+  @include box-shadow();
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  .profile-card-header {
+    padding: 13px 20px 10px;
+    border-bottom: 1px solid rgba($default-dark-color, .08);
+    .profile-card-title {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      color: $default-color;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    text-align: center;
+    .profile-card-header {
+      .profile-card-title {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .profile-card-body {
+    padding: 20px;
+  }
+  .profile-avatar {
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: $default-lighter-color;
+    @media screen and (max-width: 991px) {
+      width: 120px;
+      height: 120px;
+      float: none;
+      margin-right: 0;
+      display: inline-block;
+    }
+  }
+}
+.clearfix {
+  clear: both;
+}
